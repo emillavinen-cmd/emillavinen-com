@@ -9,10 +9,16 @@ export interface PostMeta {
   title: string;
   date: string;
   description: string;
+  published: boolean;
 }
 
 export interface Post extends PostMeta {
   content: string;
+}
+
+function normalizeDate(raw: unknown): string {
+  if (raw instanceof Date) return raw.toISOString().split("T")[0];
+  return String(raw ?? "");
 }
 
 export function getPostSlugs(): string[] {
@@ -31,8 +37,9 @@ export function getPostBySlug(slug: string): Post {
   return {
     slug,
     title: data.title ?? "",
-    date: data.date ?? "",
+    date: normalizeDate(data.date),
     description: data.description ?? "",
+    published: data.published !== false,
     content,
   };
 }
@@ -40,5 +47,6 @@ export function getPostBySlug(slug: string): Post {
 export function getAllPosts(): Post[] {
   return getPostSlugs()
     .map((slug) => getPostBySlug(slug))
+    .filter((post) => post.published)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
