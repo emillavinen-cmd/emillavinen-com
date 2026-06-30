@@ -1,14 +1,9 @@
 :root {
   /* ── Typefaces ──────────────────────────────────────────────────────────────
-   * Body: Inter — the closest available grotesque to Helvetica Neue. Neutral
-   *   and invisible at body size, structured and clean at display scale.
-   * Display: Space Grotesk — geometric grotesque with distinctive letterforms
-   *   at large sizes. Stays in the grotesque family for yeezy-style coherence
-   *   while providing visual personality that pure Inter cannot at 8rem.
-   * Both loaded via next/font (self-hosted, no external requests). ─────────── */
-  --font-sans:    var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: var(--font-space-grotesk), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono:    ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+   * Space Mono 400 — loaded via next/font (self-hosted, no external requests). */
+  --font-sans:    var(--font-space-mono), "Courier New", Courier, monospace;
+  --font-display: var(--font-space-mono), "Courier New", Courier, monospace;
+  --font-mono:    var(--font-space-mono), ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
   /* ── Type scale ─────────────────────────────────────────────────────────── */
   --text-xs:   0.75rem;    /*  12px */
