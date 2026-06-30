@@ -140,7 +140,6 @@ export default async function BlogPostPage({ params }: Props) {
                 fontFamily: "var(--font-sans)",
                 fontSize: "var(--text-sm)",
                 letterSpacing: "var(--tracking-wide)",
-                textTransform: "uppercase",
                 color: "var(--color-fg-muted)",
                 display: "flex",
                 gap: "var(--space-6)",

@@ -114,12 +114,11 @@ export default function TableOfContents({ items, wordCount }: Props) {
             fontFamily: "var(--font-sans)",
             fontSize: "var(--text-xs)",
             letterSpacing: "var(--tracking-widest)",
-            textTransform: "uppercase",
             color: "var(--color-fg-muted)",
             marginBottom: "var(--space-3)",
           }}
         >
-          In this post
+          in this post
         </p>
         {tocList}
       </div>
@@ -139,12 +138,11 @@ export default function TableOfContents({ items, wordCount }: Props) {
             fontFamily: "var(--font-sans)",
             fontSize: "var(--text-xs)",
             letterSpacing: "var(--tracking-widest)",
-            textTransform: "uppercase",
             color: "var(--color-fg-muted)",
             marginBottom: mobileOpen ? "var(--space-3)" : 0,
           }}
         >
-          Contents{" "}
+          contents{" "}
           <span style={{ fontFamily: "monospace" }}>{mobileOpen ? "−" : "+"}</span>
         </button>
         {mobileOpen && tocList}

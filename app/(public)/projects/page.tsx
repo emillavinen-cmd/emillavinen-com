@@ -28,7 +28,6 @@ export default function ProjectsPage() {
         maxWidth: "1200px",
         margin: "0 auto",
         padding: "var(--space-32) var(--space-8)",
-        paddingBottom: "calc(var(--space-32) + 80px)",
         fontFamily: "var(--font-sans)",
       }}
     >
@@ -46,10 +45,10 @@ export default function ProjectsPage() {
             }}
           >
             <div>
-              <p style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-wide)", color: "var(--color-fg-muted)", margin: "0 0 var(--space-1)", textTransform: "uppercase" }}>{project.client}</p>
+              <p style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-wide)", color: "var(--color-fg-muted)", margin: "0 0 var(--space-1)" }}>{project.client.toLowerCase()}</p>
               <p style={{ fontSize: "var(--text-xl)", fontWeight: 400, color: "var(--color-fg)", margin: 0 }}>{project.title}</p>
             </div>
-            <div style={{ display: "flex", gap: "var(--space-8)", flexShrink: 0, fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", textTransform: "uppercase", color: "var(--color-fg-muted)" }}>
+            <div style={{ display: "flex", gap: "var(--space-8)", flexShrink: 0, fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", color: "var(--color-fg-muted)" }}>
               <span>{project.category}</span>
               <span>{project.year}</span>
             </div>

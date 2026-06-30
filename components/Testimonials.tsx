@@ -22,7 +22,6 @@ function TestimonialItem({ t }: { t: Testimonial }) {
           fontFamily: "var(--font-sans)",
           fontSize: "var(--text-sm)",
           letterSpacing: "var(--tracking-wide)",
-          textTransform: "uppercase",
           color: "var(--color-fg-muted)",
           margin: 0,
         }}

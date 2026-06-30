@@ -30,8 +30,8 @@ export default function BlogPage() {
         }}
       >
         {posts.length === 0 ? (
-          <p style={{ color: "var(--color-fg-muted)", fontSize: "var(--text-sm)", letterSpacing: "var(--tracking-wide)", textTransform: "uppercase" }}>
-            No posts yet.
+          <p style={{ color: "var(--color-fg-muted)", fontSize: "var(--text-sm)", letterSpacing: "var(--tracking-wide)" }}>
+            no posts yet.
           </p>
         ) : (
           <ul style={{ listStyle: "none", padding: 0, margin: 0, maxWidth: "800px" }}>
