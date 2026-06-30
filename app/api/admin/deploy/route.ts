@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { pingSitemap } from "@/lib/sitemap-ping";
 
 export async function POST() {
   const hookUrl = process.env.VERCEL_DEPLOY_HOOK_URL;
@@ -9,5 +10,9 @@ export async function POST() {
   if (!res.ok) {
     return NextResponse.json({ error: "Deploy hook failed" }, { status: 502 });
   }
+
+  // Ping search engines after triggering deploy — fire and forget
+  pingSitemap().catch(() => {});
+
   return NextResponse.json({ ok: true });
 }
