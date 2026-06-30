@@ -15,7 +15,7 @@ function scorePost(wordCount: number, tagCount: number, daysSince: number): { pr
     daysSince < 30 ? "weekly" :
     daysSince < 180 ? "monthly" : "yearly";
 
-  return { priority: Math.min(0.95, Math.max(0.1, priority)), changeFrequency };
+  return { priority: Math.round(Math.min(0.95, Math.max(0.1, priority)) * 100) / 100, changeFrequency };
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
