@@ -48,42 +48,27 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section
         style={{
-          minHeight: "100svh",
+          minHeight: "60svh",
           display: "flex",
-          alignItems: "flex-start",
-          padding: "clamp(var(--space-32), 34svh, var(--space-48)) var(--space-8) var(--space-32)",
+          alignItems: "flex-end",
+          padding: "var(--space-32) var(--space-8)",
           maxWidth: "1200px",
           margin: "0 auto",
           boxSizing: "border-box",
         }}
       >
         <div>
-          <h1
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(3rem, 8vw, 8rem)",
-              fontWeight: 400,
-              letterSpacing: "var(--tracking-tight)",
-              lineHeight: "var(--leading-tight)",
-              margin: 0,
-              color: "var(--color-fg)",
-            }}
-          >
-            Emil Lavinen
-          </h1>
-
           <p
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: "var(--text-sm)",
               fontWeight: 400,
               letterSpacing: "var(--tracking-widest)",
-              textTransform: "uppercase",
               color: "var(--color-fg-secondary)",
               margin: 0,
             }}
           >
-            Creative Director &amp; Brand Strategist — Helsinki
+            creative director &amp; brand strategist — helsinki
           </p>
 
           <p
@@ -110,7 +95,7 @@ export default function HomePage() {
         id="about"
         style={{
           paddingTop: "var(--space-40)",
-          paddingBottom: "calc(var(--space-32) + 80px)",
+          paddingBottom: "var(--space-32)",
           paddingLeft: "var(--space-8)",
           paddingRight: "var(--space-8)",
           maxWidth: "1200px",

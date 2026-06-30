@@ -102,7 +102,6 @@ export default async function BlogPostPage({ params }: Props) {
           maxWidth: "1200px",
           margin: "0 auto",
           padding: "var(--space-32) var(--space-8)",
-          paddingBottom: "calc(var(--space-32) + 80px)",
           fontFamily: "var(--font-sans)",
         }}
       >
@@ -115,12 +114,11 @@ export default async function BlogPostPage({ params }: Props) {
                 fontFamily: "var(--font-sans)",
                 fontSize: "var(--text-sm)",
                 letterSpacing: "var(--tracking-wide)",
-                textTransform: "uppercase",
                 display: "inline-block",
                 marginBottom: "var(--space-12)",
               }}
             >
-              ← Blog
+              ← blog
             </Link>
 
             <h1

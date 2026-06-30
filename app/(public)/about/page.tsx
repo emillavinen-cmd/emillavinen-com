@@ -22,7 +22,6 @@ export default function AboutPage() {
           maxWidth: "1200px",
           margin: "0 auto",
           padding: "var(--space-32) var(--space-8)",
-          paddingBottom: "calc(var(--space-32) + 80px)",
           fontFamily: "var(--font-sans)",
         }}
       >
@@ -48,19 +47,19 @@ export default function AboutPage() {
             }}
           >
             {[
-              { label: "Location", value: "Helsinki, Finland" },
-              { label: "Role", value: "Creative Director & Brand Strategist" },
+              { label: "location", value: "helsinki, finland" },
+              { label: "role", value: "creative director & brand strategist" },
             ].map(({ label, value }) => (
               <div key={label} style={{ display: "flex", gap: "var(--space-12)" }}>
-                <dt style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", textTransform: "uppercase", color: "var(--color-fg-muted)", width: "96px", flexShrink: 0 }}>
+                <dt style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", color: "var(--color-fg-muted)", width: "96px", flexShrink: 0 }}>
                   {label}
                 </dt>
                 <dd style={{ fontSize: "var(--text-sm)", color: "var(--color-fg)", margin: 0 }}>{value}</dd>
               </div>
             ))}
             <div style={{ display: "flex", gap: "var(--space-12)" }}>
-              <dt style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", textTransform: "uppercase", color: "var(--color-fg-muted)", width: "96px", flexShrink: 0 }}>
-                Contact
+              <dt style={{ fontSize: "var(--text-xs)", letterSpacing: "var(--tracking-widest)", color: "var(--color-fg-muted)", width: "96px", flexShrink: 0 }}>
+                contact
               </dt>
               <dd style={{ margin: 0 }}>
                 <a
